@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Information"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/Background1">
+
+    <com.amar.library.ui.StickyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="0.85">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="50dp"
+        app:cardBackgroundColor="@color/Background2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/arrow_info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/arrow"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SONY SAB TV GUIDE"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/Background2"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="30dp"
+        android:id="@+id/info_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_card"
+            android:layout_margin="2dp">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingVertical="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show1_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show1" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn1_information"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:text="Watch Live Show"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show2_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/banner" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn2_information"
+                        android:text="About SAB TV"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show3_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show3" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn3_information"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/Background2"
+                        android:text="SAB TV History"
+                        android:textColor="@color/White"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show4_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show4" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn4_information"
+                        android:text="SAB TV Content"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show5_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show5" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn5_information"
+                        android:text="SAB Rishtey Awards"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show6_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show6" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn6_information"
+                        android:text="Controversy of SAB TV"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show7_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show7" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn7_information"
+                        android:text="How to Watch Movie in SAB"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show8_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show8" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn8_information"
+                        android:text="SAB TV Stream"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/show9_information"
+                app:cardCornerRadius="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="30dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/White">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="300dp"
+                        android:layout_height="250dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="5dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/show9" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/custom_image" />
+
+                    </FrameLayout>
+
+                    <Button
+                        android:id="@+id/btn9_information"
+                        android:text="Live Streaming On SABTV"
+                        android:textSize="20sp"
+                        android:textColor="@color/White"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Background2"
+                        android:layout_margin="5dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </com.amar.library.ui.StickyScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+    </LinearLayout>
+
+</LinearLayout>
